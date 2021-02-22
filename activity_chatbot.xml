@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CD7C7C"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:inputType="textShortMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#EDDADA"
+            android:hint="Type a message..."
+            android:padding="10dp"
+            android:singleLine="true"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#5BACA4"
+            android:text="Send"
+            android:textColor="@color/purple_700" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="204dp"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/send_round_box"
+        android:backgroundTint="#26A69A"
+        android:padding="14dp"
+        android:text="Hello, Tell about my health conditions"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_bot_message"
+        android:layout_width="207dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/receive_round_box"
+        android:backgroundTint="#DA7E7E"
+        android:padding="14dp"
+        android:text="Hello !! wait your Health parameters will appear"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/black"
+        android:id="@+id/dark_divider"/>
+
+
+</RelativeLayout>
